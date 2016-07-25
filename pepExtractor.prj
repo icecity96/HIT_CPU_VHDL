@@ -1,0 +1,7 @@
+work	"arithmetic.vhd"
+work	"contrl.vhd"
+work	"cpu_final.vhd"
+work	"fetch.vhd"
+work	"memery_modle.vhd"
+work	"rewrite.vhd"
+work	"timer.vhd"

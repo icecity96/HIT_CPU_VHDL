@@ -1,0 +1,513 @@
+Release 14.3 - xst P.40xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: fetch.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "fetch.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "fetch"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : fetch
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\ice_city\ice_city_cpu\fetch.vhd" into library work
+Parsing entity <fetch>.
+Parsing architecture <Behavioral> of entity <fetch>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <fetch> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "C:\Users\ice_city\ice_city_cpu\fetch.vhd" Line 57: irnew should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\ice_city\ice_city_cpu\fetch.vhd" Line 61: pcnew should be on the sensitivity list of the process
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <fetch>.
+    Related source file is "C:\Users\ice_city\ice_city_cpu\fetch.vhd".
+WARNING:Xst:647 - Input <PCnew> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PCupdate> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 16-bit register for signal <PC>.
+    Found 16-bit adder for signal <PC[15]_GND_5_o_add_0_OUT> created at line 59.
+WARNING:Xst:737 - Found 1-bit latch for signal <IR_value<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IR_value<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IR_value<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IR_value<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IR_value<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IR_value<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IR_value<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IR_value<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IR_value<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IR_value<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IR_value<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IR_value<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IR_value<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IR_value<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IR_value<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IR_value<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Irreq>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  16 D-type flip-flop(s).
+	inferred  17 Latch(s).
+Unit <fetch> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 16-bit adder                                          : 1
+# Registers                                            : 1
+ 16-bit register                                       : 1
+# Latches                                              : 17
+ 1-bit latch                                           : 17
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 16-bit adder                                          : 1
+# Registers                                            : 16
+ Flip-Flops                                            : 16
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:3001 - This design contains one or more registers or latches with an active
+   asynchronous set and asynchronous reset. While this circuit can be built,
+   it creates a sub-optimal implementation in terms of area, power and
+   performance. For a more optimal implementation Xilinx highly recommends
+   one of the following:
+
+          1) Remove either the set or reset from all registers and latches if
+             not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Artix7 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    Irreq in unit <fetch>
+
+
+Optimizing unit <fetch> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block fetch, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 16
+ Flip-Flops                                            : 16
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : fetch.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 52
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 15
+#      LUT2                        : 3
+#      MUXCY                       : 15
+#      VCC                         : 1
+#      XORCY                       : 16
+# FlipFlops/Latches                : 33
+#      FDCE                        : 16
+#      LD                          : 1
+#      LDE_1                       : 16
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 52
+#      IBUF                        : 19
+#      OBUF                        : 33
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              16  out of  126800     0%  
+ Number of Slice LUTs:                   19  out of  63400     0%  
+    Number used as Logic:                19  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     19
+   Number with an unused Flip Flop:       3  out of     19    15%  
+   Number with an unused LUT:             0  out of     19     0%  
+   Number of fully used LUT-FF pairs:    16  out of     19    84%  
+   Number of unique control sets:         3
+
+IO Utilization: 
+ Number of IOs:                          70
+ Number of bonded IOBs:                  53  out of    210    25%  
+    IOB Flip Flops/Latches:              17
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     32     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+rst                                | IBUF+BUFG              | 16    |
+clk                                | BUFGP                  | 16    |
+Irreq_G(Irreq_G:O)                 | NONE(*)(Irreq)         | 1     |
+-----------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 1.811ns (Maximum Frequency: 552.334MHz)
+   Minimum input arrival time before clock: 1.003ns
+   Maximum output required time after clock: 0.754ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 1.811ns (frequency: 552.334MHz)
+  Total number of paths / destination ports: 136 / 16
+-------------------------------------------------------------------------
+Delay:               1.811ns (Levels of Logic = 17)
+  Source:            PC_0 (FF)
+  Destination:       PC_15 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: PC_0 to PC_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.361   0.283  PC_0 (PC_0)
+     INV:I->O              1   0.113   0.000  Madd_PC[15]_GND_5_o_add_0_OUT_lut<0>_INV_0 (Madd_PC[15]_GND_5_o_add_0_OUT_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  Madd_PC[15]_GND_5_o_add_0_OUT_cy<0> (Madd_PC[15]_GND_5_o_add_0_OUT_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_PC[15]_GND_5_o_add_0_OUT_cy<1> (Madd_PC[15]_GND_5_o_add_0_OUT_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_PC[15]_GND_5_o_add_0_OUT_cy<2> (Madd_PC[15]_GND_5_o_add_0_OUT_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_PC[15]_GND_5_o_add_0_OUT_cy<3> (Madd_PC[15]_GND_5_o_add_0_OUT_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_PC[15]_GND_5_o_add_0_OUT_cy<4> (Madd_PC[15]_GND_5_o_add_0_OUT_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_PC[15]_GND_5_o_add_0_OUT_cy<5> (Madd_PC[15]_GND_5_o_add_0_OUT_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_PC[15]_GND_5_o_add_0_OUT_cy<6> (Madd_PC[15]_GND_5_o_add_0_OUT_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_PC[15]_GND_5_o_add_0_OUT_cy<7> (Madd_PC[15]_GND_5_o_add_0_OUT_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_PC[15]_GND_5_o_add_0_OUT_cy<8> (Madd_PC[15]_GND_5_o_add_0_OUT_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_PC[15]_GND_5_o_add_0_OUT_cy<9> (Madd_PC[15]_GND_5_o_add_0_OUT_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_PC[15]_GND_5_o_add_0_OUT_cy<10> (Madd_PC[15]_GND_5_o_add_0_OUT_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_PC[15]_GND_5_o_add_0_OUT_cy<11> (Madd_PC[15]_GND_5_o_add_0_OUT_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_PC[15]_GND_5_o_add_0_OUT_cy<12> (Madd_PC[15]_GND_5_o_add_0_OUT_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_PC[15]_GND_5_o_add_0_OUT_cy<13> (Madd_PC[15]_GND_5_o_add_0_OUT_cy<13>)
+     MUXCY:CI->O           0   0.023   0.000  Madd_PC[15]_GND_5_o_add_0_OUT_cy<14> (Madd_PC[15]_GND_5_o_add_0_OUT_cy<14>)
+     XORCY:CI->O           1   0.370   0.000  Madd_PC[15]_GND_5_o_add_0_OUT_xor<15> (PC[15]_GND_5_o_add_0_OUT<15>)
+     FDCE:D                    0.008          PC_15
+    ----------------------------------------
+    Total                      1.811ns (1.527ns logic, 0.283ns route)
+                                       (84.3% logic, 15.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              0.459ns (Levels of Logic = 1)
+  Source:            t0 (PAD)
+  Destination:       IR_value_14 (LATCH)
+  Destination Clock: rst rising
+
+  Data Path: t0 to IR_value_14
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            19   0.001   0.363  t0_IBUF (t0_IBUF)
+     LDE_1:GE                  0.095          IR_value_14
+    ----------------------------------------
+    Total                      0.459ns (0.096ns logic, 0.363ns route)
+                                       (20.9% logic, 79.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 48 / 32
+-------------------------------------------------------------------------
+Offset:              1.003ns (Levels of Logic = 2)
+  Source:            t0 (PAD)
+  Destination:       PC_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: t0 to PC_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            19   0.001   0.463  t0_IBUF (t0_IBUF)
+     LUT2:I0->O           16   0.097   0.348  _n0043_inv1 (_n0043_inv)
+     FDCE:CE                   0.095          PC_0
+    ----------------------------------------
+    Total                      1.003ns (0.193ns logic, 0.811ns route)
+                                       (19.2% logic, 80.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Irreq_G'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              0.556ns (Levels of Logic = 2)
+  Source:            rst (PAD)
+  Destination:       Irreq (LATCH)
+  Destination Clock: Irreq_G falling
+
+  Data Path: rst to Irreq
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            18   0.001   0.458  rst_IBUF (rst_IBUF)
+     LUT2:I0->O            1   0.097   0.000  Irreq_D (Irreq_D)
+     LD:D                     -0.028          Irreq
+    ----------------------------------------
+    Total                      0.556ns (0.098ns logic, 0.458ns route)
+                                       (17.6% logic, 82.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'rst'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              0.754ns (Levels of Logic = 1)
+  Source:            IR_value_15 (LATCH)
+  Destination:       IR<15> (PAD)
+  Source Clock:      rst rising
+
+  Data Path: IR_value_15 to IR<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE_1:G->Q            1   0.475   0.279  IR_value_15 (IR_value_15)
+     OBUF:I->O                 0.000          IR_15_OBUF (IR<15>)
+    ----------------------------------------
+    Total                      0.754ns (0.475ns logic, 0.279ns route)
+                                       (63.0% logic, 37.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              0.645ns (Levels of Logic = 1)
+  Source:            PC_15 (FF)
+  Destination:       PCout<15> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: PC_15 to PCout<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.361   0.283  PC_15 (PC_15)
+     OBUF:I->O                 0.000          PCout_15_OBUF (PCout<15>)
+    ----------------------------------------
+    Total                      0.645ns (0.361ns logic, 0.283ns route)
+                                       (56.0% logic, 44.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Irreq_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            Irreq (LATCH)
+  Destination:       Irreq (PAD)
+  Source Clock:      Irreq_G falling
+
+  Data Path: Irreq to Irreq
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  Irreq (Irreq_OBUF)
+     OBUF:I->O                 0.000          Irreq_OBUF (Irreq)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    1.811|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 11.10 secs
+ 
+--> 
+
+Total memory usage is 481180 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   22 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

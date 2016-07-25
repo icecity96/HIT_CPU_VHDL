@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/ice_city/ice_city_cpu/fetch.xst" -ofn "C:/Users/ice_city/ice_city_cpu/fetch.syr" 
+xst -intstyle ise -ifn "C:/Users/ice_city/ice_city_cpu/fetch.xst" -ofn "C:/Users/ice_city/ice_city_cpu/fetch.syr" 

@@ -1,0 +1,8 @@
+vhdl work "timer.vhd"
+vhdl work "rewrite.vhd"
+vhdl work "memery_modle.vhd"
+vhdl work "fetch.vhd"
+vhdl work "contrl.vhd"
+vhdl work "arithmetic.vhd"
+vhdl work "cpu_final.vhd"
+vhdl work "cpu_tb.vhd"

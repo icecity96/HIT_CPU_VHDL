@@ -1,0 +1,8 @@
+vhdl isim_temp "timer.vhd"
+vhdl isim_temp "rewrite.vhd"
+vhdl isim_temp "memery_modle.vhd"
+vhdl isim_temp "fetch.vhd"
+vhdl isim_temp "contrl.vhd"
+vhdl isim_temp "arithmetic.vhd"
+vhdl isim_temp "cpu_final.vhd"
+vhdl isim_temp "cpu_tb.vhd"

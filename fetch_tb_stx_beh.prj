@@ -1,0 +1,2 @@
+vhdl isim_temp "fetch.vhd"
+vhdl isim_temp "fetch_tb.vhd"

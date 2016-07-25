@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/ice_city/ice_city_cpu/timer.xst" -ofn "C:/Users/ice_city/ice_city_cpu/timer.syr" 
+xst -intstyle ise -ifn "C:/Users/ice_city/ice_city_cpu/timer.xst" -ofn "C:/Users/ice_city/ice_city_cpu/timer.syr" 

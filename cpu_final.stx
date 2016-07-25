@@ -1,0 +1,75 @@
+Release 14.3 - xst P.40xd (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/ice_city/ice_city_cpu/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/ice_city/ice_city_cpu/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: cpu_final.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\ice_city\ice_city_cpu\timer.vhd" into library work
+Parsing entity <timer>.
+Parsing architecture <Behavioral> of entity <timer>.
+Parsing VHDL file "C:\Users\ice_city\ice_city_cpu\rewrite.vhd" into library work
+Parsing entity <rewrite>.
+Parsing architecture <Behavioral> of entity <rewrite>.
+Parsing VHDL file "C:\Users\ice_city\ice_city_cpu\memery_modle.vhd" into library work
+Parsing entity <memery_modle>.
+Parsing architecture <Behavioral> of entity <memery_modle>.
+Parsing VHDL file "C:\Users\ice_city\ice_city_cpu\fetch.vhd" into library work
+Parsing entity <fetch>.
+Parsing architecture <Behavioral> of entity <fetch>.
+Parsing VHDL file "C:\Users\ice_city\ice_city_cpu\contrl.vhd" into library work
+Parsing entity <contrl>.
+Parsing architecture <Behavioral> of entity <contrl>.
+Parsing VHDL file "C:\Users\ice_city\ice_city_cpu\arithmetic.vhd" into library work
+Parsing entity <arithmetic>.
+Parsing architecture <Behavioral> of entity <arithmetic>.
+Parsing VHDL file "C:\Users\ice_city\ice_city_cpu\cpu_final.vhd" into library work
+Parsing entity <cpu_final>.
+Parsing architecture <Behavioral> of entity <cpu_final>.
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.25 secs
+ 
+--> 
+
+Total memory usage is 228408 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

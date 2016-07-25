@@ -1,0 +1,2 @@
+vhdl isim_temp "memery_modle.vhd"
+vhdl isim_temp "mm_tb.vhd"

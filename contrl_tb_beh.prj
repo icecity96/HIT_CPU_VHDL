@@ -1,0 +1,2 @@
+vhdl work "contrl.vhd"
+vhdl work "contrl_tb.vhd"
